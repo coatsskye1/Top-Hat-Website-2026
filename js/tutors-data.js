@@ -17,13 +17,15 @@
 //   photo    - Path to a photo, e.g. "assets/tutors/jane.jpg".
 //              Put the image file in the assets/tutors/ folder
 //              (create it if it doesn't exist yet) and reference
-//              it here. Leave as "" (empty string) to show an
-//              automatically generated initials avatar instead.
+//              it here. Photos display in a square frame, so a
+//              square or portrait crop works best. Leave as ""
+//              (empty string) to show an automatically generated
+//              initials avatar instead.
 //   subjects - Array of subjects this tutor teaches, e.g.
 //              ["Math", "Science"]. Use consistent names across
 //              tutors so the subject filter groups them correctly.
 //   towns    - Array of towns/areas this tutor is willing to
-//              tutor in, e.g. ["Springfield", "Shelbyville"].
+//              tutor in, e.g. ["Westport", "Fairfield"].
 //   grades   - Grade range as a short string, e.g. "Grades 3-8"
 //   bio      - 1-2 sentence bio
 //   online   - true if this tutor also offers online sessions
@@ -34,7 +36,7 @@ const TUTORS = [
     name: "Jane Smith",
     photo: "",
     subjects: ["Math", "Test Prep"],
-    towns: ["Springfield", "Shelbyville"],
+    towns: ["Westport", "Fairfield"],
     grades: "Grades 6-12",
     bio: "Specializes in Algebra, Geometry, and SAT/ACT math prep. Loves turning math anxiety into math confidence.",
     online: true
@@ -43,7 +45,7 @@ const TUTORS = [
     name: "Marcus Lee",
     photo: "",
     subjects: ["Science", "Math"],
-    towns: ["Springfield", "Capital City"],
+    towns: ["Westport", "Norwalk"],
     grades: "Grades 9-12",
     bio: "Background in biology and chemistry, with a focus on helping students prep for AP exams.",
     online: true
@@ -52,7 +54,7 @@ const TUTORS = [
     name: "Priya Patel",
     photo: "",
     subjects: ["English/Writing", "College Essays"],
-    towns: ["Shelbyville", "Capital City"],
+    towns: ["Darien", "Norwalk"],
     grades: "Grades 6-12",
     bio: "Helps students find their voice in essays, from weekly English homework to college applications.",
     online: false
@@ -61,7 +63,7 @@ const TUTORS = [
     name: "Sam Rivera",
     photo: "",
     subjects: ["All Subjects", "Test Prep"],
-    towns: ["Springfield"],
+    towns: ["Weston", "Wilton"],
     grades: "Grades K-8",
     bio: "Generalist tutor for elementary and middle school students across all core subjects.",
     online: true

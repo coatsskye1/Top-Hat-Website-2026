@@ -1,6 +1,9 @@
-# Top Hat Tutoring — Website
+# Top Hat Tutors — Website
 
-A simple, fast static website for a tutoring business, ready to publish on GitHub Pages.
+A simple, fast static website for Top Hat Tutors, ready to publish on GitHub Pages.
+The look is built around the real Top Hat Tutors logo and Instagram branding: a warm
+cream background, sage green and brick red accents, and a cozy "corkboard/scrapbook"
+feel (pinned cards, polaroid-style photo frames, a rounded accent font).
 
 ## Pages
 
@@ -25,14 +28,18 @@ its HTML to add, remove, or edit a tutor.
 3. Fill in `name`, `subjects`, `towns`, `grades`, and `bio`.
 4. For a photo, add the image file to an `assets/tutors/` folder (create it
    if needed) and set `photo` to its path, e.g. `"assets/tutors/jane.jpg"`.
-   Leaving `photo` as `""` automatically shows a colored initials avatar
-   instead — handy while you're still collecting headshots.
-5. Save and refresh `tutors.html`. The new tutor appears immediately, and the
-   subject/town filter dropdowns update automatically to include any new
-   values you used.
+   Photos display large in a square frame, so a square or portrait crop
+   works best. Leaving `photo` as `""` automatically shows a colored
+   initials avatar instead — handy while you're still collecting headshots.
+5. Save and refresh `tutors.html`. The new tutor bio card appears
+   immediately, and the subject/town filter dropdowns update automatically
+   to include any new values you used.
 
 To remove a tutor, delete their object from the array. There's nothing else
 to update — the filters, counts, and cards all regenerate from this one file.
+Tutor bio cards are informational only (no "Book Now" button) — visitors
+book through the main **Book a Session** button in the nav/footer, which
+goes to `contact.html`.
 
 ## Editing the FAQ
 
@@ -48,6 +55,28 @@ Each question is a `<details class="faq-item">` element:
 
 Copy that block to add a new question, or delete one to remove it. No
 JavaScript is required — the dropdown/accordion behavior is native HTML.
+
+## Logo & branding
+
+The real Top Hat Tutors logo lives in `assets/logo/`:
+
+- `badge.png` — the circular badge (top hat, book, apple, "Est. 2013 · Westport").
+  Used as the favicon and next to "Top Hat Tutors" in the nav and footer.
+- `wordmark.png` — the "TOP HAT TUTORS" text logo with the tilted top hat.
+  Used at the top of the homepage hero.
+
+To swap in a higher-resolution version later, just replace these two files
+(keep the same filenames) and every page picks it up automatically.
+
+## Adding photos
+
+Every page now has dashed-border "Add a photo" placeholders (some styled as
+polaroids) marking good spots for real photos — the homepage hero and photo
+gallery, the About page headshot, the Subjects page, the Contact page, and
+each tutor bio's photo. To swap one in, replace the `.photo-placeholder`
+`<div>` with an `<img>` tag pointing at your image (see the `EDIT ME`
+comments near each one), or for tutors, just set the `photo` field in
+`js/tutors-data.js` as described above.
 
 ## 1. Things you need to personalize
 
@@ -100,11 +129,11 @@ Then visit `http://localhost:8000`.
 
 ### Using a custom domain (optional)
 
-If you buy a domain (e.g. `tophattutoring.com`):
+If you buy a domain (e.g. `tophattutors.com`):
 
 1. Add a `CNAME` file to the repo root containing just your domain, e.g.:
    ```
-   tophattutoring.com
+   tophattutors.com
    ```
 2. In your domain registrar's DNS settings, point the domain at GitHub Pages
    (an `A` record to GitHub's IPs, or a `CNAME` record to

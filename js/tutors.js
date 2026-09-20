@@ -101,12 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bio.className = 'tutor-bio';
     bio.textContent = tutor.bio || '';
 
-    const btn = document.createElement('a');
-    btn.href = 'contact.html';
-    btn.className = 'btn btn-outline';
-    btn.textContent = `Book with ${tutor.name.split(' ')[0]}`;
-
-    card.append(photoWrap, name, grades, tags, towns, bio, btn);
+    card.append(photoWrap, name, grades, tags, towns, bio);
     return card;
   }
 
