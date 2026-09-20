@@ -597,3 +597,220 @@ section { padding: 72px 0; }
   text-transform: uppercase;
   margin-bottom: 12px;
 }
+
+/* ---------- Tutor Directory ---------- */
+.filter-bar {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow);
+}
+@media (max-width: 800px) {
+  .filter-bar { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+  .filter-bar { grid-template-columns: 1fr; }
+}
+
+.filter-field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filter-field select,
+.filter-field input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: var(--cream);
+  color: var(--navy);
+}
+.filter-field select:focus,
+.filter-field input:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+
+.filter-field .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.filter-results-count {
+  color: var(--gray-500);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.tutor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 900px) {
+  .tutor-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .tutor-grid { grid-template-columns: 1fr; }
+}
+
+.tutor-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.tutor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.tutor-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.tutor-photo,
+.tutor-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--white);
+  border: 3px solid var(--gold-light);
+}
+
+.tutor-card h3 {
+  text-align: center;
+  margin-bottom: 2px;
+}
+.tutor-grades {
+  text-align: center;
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.tutor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.tag {
+  background: rgba(201, 162, 75, 0.14);
+  color: var(--navy);
+  border: 1px solid var(--gold-light);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.tutor-towns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.tutor-towns svg { color: var(--gold); flex-shrink: 0; }
+
+.tutor-bio {
+  flex: 1;
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.tutor-card .btn {
+  margin: 8px auto 0;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--gray-500);
+}
+
+/* ---------- FAQ Accordion ---------- */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 4px 24px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { content: ""; }
+
+.faq-item summary .faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 0 20px;
+  color: var(--gray-700);
+  margin: 0;
+}

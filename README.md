@@ -4,14 +4,50 @@ A simple, fast static website for a tutoring business, ready to publish on GitHu
 
 ## Pages
 
-- `index.html` — Home page
+- `index.html` — Home page, including an FAQ accordion section (`#faq`)
 - `about.html` — About the tutor
+- `tutors.html` — Filterable directory of all tutors (see below)
 - `subjects.html` — Subjects covered and rates
 - `contact.html` — Contact form (Google Form embed) and contact info
 
 Shared styles live in `css/style.css`, shared behavior (mobile nav, active link
 highlighting) in `js/main.js`. There's no build step — it's plain HTML/CSS/JS,
 so you can edit files directly and refresh the page to see changes.
+
+## Adding tutors to the directory
+
+The tutor directory (`tutors.html`) is data-driven — you never need to touch
+its HTML to add, remove, or edit a tutor.
+
+1. Open `js/tutors-data.js`.
+2. Copy one of the existing tutor objects in the `TUTORS` array and paste it
+   back into the array.
+3. Fill in `name`, `subjects`, `towns`, `grades`, and `bio`.
+4. For a photo, add the image file to an `assets/tutors/` folder (create it
+   if needed) and set `photo` to its path, e.g. `"assets/tutors/jane.jpg"`.
+   Leaving `photo` as `""` automatically shows a colored initials avatar
+   instead — handy while you're still collecting headshots.
+5. Save and refresh `tutors.html`. The new tutor appears immediately, and the
+   subject/town filter dropdowns update automatically to include any new
+   values you used.
+
+To remove a tutor, delete their object from the array. There's nothing else
+to update — the filters, counts, and cards all regenerate from this one file.
+
+## Editing the FAQ
+
+The FAQ lives directly in `index.html` inside the `<section id="faq">` block.
+Each question is a `<details class="faq-item">` element:
+
+```html
+<details class="faq-item">
+  <summary>Your question here?<span class="faq-icon">+</span></summary>
+  <p class="faq-answer">Your answer here.</p>
+</details>
+```
+
+Copy that block to add a new question, or delete one to remove it. No
+JavaScript is required — the dropdown/accordion behavior is native HTML.
 
 ## 1. Things you need to personalize
 
