@@ -11,6 +11,8 @@ feel (pinned cards, polaroid-style photo frames, a rounded accent font).
 - `about.html` — About the tutor
 - `tutors.html` — Filterable directory of all tutors (see below)
 - `subjects.html` — Subjects covered and rates
+- `apply.html` — "Apply to Be a Tutor" page: what the role is like, who
+  you're looking for, and a Google Form embed for applications
 - `contact.html` — Contact form (Google Form embed) and contact info
 
 Shared styles live in `css/style.css`, shared behavior (mobile nav, active link
@@ -88,14 +90,20 @@ placeholder content. At minimum, update:
    - Replace `(555) 555-5555` with your real phone number, or delete that
      list item if you don't want to list one.
 
-2. **Google Form embed** (`contact.html`) — the booking form currently points
-   to a placeholder. To connect your real form:
+2. **Google Form embeds** — there are two separate forms, each with its own
+   placeholder to swap out:
+   - `contact.html` — the booking form for families requesting tutoring.
+   - `apply.html` — the application form for prospective tutors (student
+     name, grade, school, towns you can tutor in, subjects, availability,
+     etc.).
+
+   To connect a real form to either page:
    1. Create a form at [Google Forms](https://forms.google.com) with the
-      fields you want (student name, grade, subject, availability, etc.).
+      fields you want.
    2. Click **Send** (top right), then choose the **Embed** tab (`<>` icon).
    3. Copy the `src="..."` URL from the `<iframe>` code shown.
-   4. In `contact.html`, find the `<iframe>` inside `.form-embed` and replace
-      its `src` value with the one you copied.
+   4. In the matching HTML file, find the `<iframe>` inside `.form-embed`
+      and replace its `src` value with the one you copied.
 
 3. **About page** (`about.html`) — replace the bio, teaching philosophy,
    credentials, and photo placeholder with your real information.
@@ -105,6 +113,10 @@ placeholder content. At minimum, update:
 
 5. **Testimonials** (`index.html`) — swap in real quotes once you have them
    (or remove the section if you don't have any yet).
+
+6. **Apply page** (`apply.html`) — replace the "What it's like to tutor with
+   us" paragraphs and the pay/perks list with your own details, and update
+   the "Who we're looking for" list if your requirements change.
 
 ## 2. Preview locally
 
