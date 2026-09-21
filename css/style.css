@@ -344,11 +344,15 @@ section { padding: 72px 0; }
   gap: 24px;
 }
 
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
 @media (max-width: 900px) {
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 800px) {
+  .grid-2 { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr; }

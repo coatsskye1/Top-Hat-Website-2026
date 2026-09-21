@@ -72,23 +72,21 @@ To swap in a higher-resolution version later, just replace these two files
 
 ## Adding photos
 
-Every page now has dashed-border "Add a photo" placeholders (some styled as
-polaroids) marking good spots for real photos — the homepage hero and photo
-gallery, the About page headshot, the Subjects page, the Contact page, and
-each tutor bio's photo. To swap one in, replace the `.photo-placeholder`
-`<div>` with an `<img>` tag pointing at your image (see the `EDIT ME`
-comments near each one), or for tutors, just set the `photo` field in
-`js/tutors-data.js` as described above.
+Photo placeholders only exist in two places now: the About page (the
+President and Vice President headshots) and each tutor's bio photo on
+`tutors.html`. On the About page, replace the `.photo-placeholder` `<div>`
+with an `<img>` tag pointing at your image (see the `EDIT ME` comments next
+to each one). For tutors, just set the `photo` field in `js/tutors-data.js`
+as described above — no HTML editing needed.
 
 ## 1. Things you need to personalize
 
 Search each HTML file for `EDIT ME` comments — those mark every spot with
 placeholder content. At minimum, update:
 
-1. **Contact info** — in `contact.html` and the footer of every page:
-   - Replace `your-email@example.com` with your real email.
-   - Replace `(555) 555-5555` with your real phone number, or delete that
-     list item if you don't want to list one.
+1. **Contact info** — the real email (`tophattutors@gmail.com`) is already
+   wired up site-wide. There's no phone number listed yet; add one in the
+   footer of every page and in `contact.html` if you'd like to list one.
 
 2. **Google Form embeds** — there are two separate forms, each with its own
    placeholder to swap out:
@@ -105,8 +103,10 @@ placeholder content. At minimum, update:
    4. In the matching HTML file, find the `<iframe>` inside `.form-embed`
       and replace its `src` value with the one you copied.
 
-3. **About page** (`about.html`) — replace the bio, teaching philosophy,
-   credentials, and photo placeholder with your real information.
+3. **About page** (`about.html`) — replace the "How Top Hat Tutors Got
+   Started" placeholder paragraph with your real founding story, and fill
+   in the President and Vice President names, roles, bios, and photos in
+   the Leadership section.
 
 4. **Rates** (`subjects.html`) — replace the `$XX` placeholders in the rates
    table with your actual pricing.
