@@ -9,7 +9,8 @@ feel (pinned cards, polaroid-style photo frames, a rounded accent font).
 
 - `index.html` — Home page, including an FAQ accordion section (`#faq`)
 - `about.html` — About the tutor
-- `tutors.html` — Filterable directory of all tutors (see below)
+- `tutors.html` — Filterable directory of academic tutors, plus a separate
+  "Music Tutors" section below it (see below)
 - `subjects.html` — Subjects covered and rates
 - `apply.html` — "Apply to Be a Tutor" page: what the role is like, who
   you're looking for, and a Google Form embed for applications
@@ -42,6 +43,18 @@ to update — the filters, counts, and cards all regenerate from this one file.
 Tutor bio cards are informational only (no "Book Now" button) — visitors
 book through the main **Book a Session** button in the nav/footer, which
 goes to `contact.html`.
+
+On every bio card, the tutor's bio text is hidden behind a "View Bio"
+dropdown and only shows once a visitor clicks it — this keeps the card grid
+compact and scannable. No setup needed; it's built into the card itself.
+
+### Music tutors
+
+Music tutors are a separate list, shown in their own "Music Tutors" section
+below the main directory, and are **not** included in the subject/town
+filters above it. To add, edit, or remove one, follow the exact same steps
+as above, but in `js/music-tutors-data.js` and its `MUSIC_TUTORS` array
+instead — use the `subjects` field for instruments (e.g. `["Piano", "Voice"]`).
 
 ## Editing the FAQ
 

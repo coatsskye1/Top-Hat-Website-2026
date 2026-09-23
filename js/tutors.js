@@ -1,16 +1,16 @@
-// Renders the tutor directory from TUTORS (see tutors-data.js)
-// and wires up the subject/town/name filters.
+// Renders the tutor directory from TUTORS (see tutors-data.js) and the
+// music tutor list from MUSIC_TUTORS (see music-tutors-data.js), and wires
+// up the subject/town/name filters for the main directory.
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('tutor-grid');
+  const musicGrid = document.getElementById('music-tutor-grid');
   const subjectSelect = document.getElementById('filter-subject');
   const townSelect = document.getElementById('filter-town');
   const searchInput = document.getElementById('filter-search');
   const clearBtn = document.getElementById('filter-clear');
   const resultsCount = document.getElementById('filter-results-count');
 
-  if (!grid || typeof TUTORS === 'undefined') return;
-
-  const AVATAR_COLORS = ['#1b2534', '#2c3a52', '#c9a24b', '#7a8194'];
+  const AVATAR_COLORS = ['#47592f', '#77906a', '#dd4534', '#8c8672'];
 
   function initials(name) {
     return name
@@ -32,25 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function uniqueValues(list) {
     return [...new Set(list)].sort();
-  }
-
-  function populateFilters() {
-    const allSubjects = uniqueValues(TUTORS.flatMap((t) => t.subjects));
-    const allTowns = uniqueValues(TUTORS.flatMap((t) => t.towns));
-
-    allSubjects.forEach((s) => {
-      const opt = document.createElement('option');
-      opt.value = s;
-      opt.textContent = s;
-      subjectSelect.appendChild(opt);
-    });
-
-    allTowns.forEach((t) => {
-      const opt = document.createElement('option');
-      opt.value = t;
-      opt.textContent = t;
-      townSelect.appendChild(opt);
-    });
   }
 
   function tutorCard(tutor) {
@@ -97,56 +78,99 @@ document.addEventListener('DOMContentLoaded', () => {
     const townsText = tutor.towns.join(', ') + (tutor.online ? ' · Online available' : '');
     towns.appendChild(document.createTextNode(townsText));
 
+    // Bio is hidden behind a click-to-expand dropdown rather than shown
+    // outright on the card.
+    const bioToggle = document.createElement('details');
+    bioToggle.className = 'bio-toggle';
+
+    const summary = document.createElement('summary');
+    summary.innerHTML = 'View Bio <span class="faq-icon">+</span>';
+
     const bio = document.createElement('p');
     bio.className = 'tutor-bio';
     bio.textContent = tutor.bio || '';
 
-    card.append(photoWrap, name, grades, tags, towns, bio);
+    bioToggle.append(summary, bio);
+
+    card.append(photoWrap, name, grades, tags, towns, bioToggle);
     return card;
   }
 
-  function render() {
-    const subject = subjectSelect.value;
-    const town = townSelect.value;
-    const search = searchInput.value.trim().toLowerCase();
+  function renderStaticGrid(container, list) {
+    if (!container) return;
+    container.innerHTML = '';
+    list.forEach((t) => container.appendChild(tutorCard(t)));
+  }
 
-    const filtered = TUTORS.filter((t) => {
-      const matchSubject = subject === 'all' || t.subjects.includes(subject);
-      const matchTown = town === 'all' || t.towns.includes(town);
-      const matchSearch = !search || t.name.toLowerCase().includes(search);
-      return matchSubject && matchTown && matchSearch;
-    });
+  // --- Main filterable tutor directory ---
+  if (grid && typeof TUTORS !== 'undefined') {
+    function populateFilters() {
+      const allSubjects = uniqueValues(TUTORS.flatMap((t) => t.subjects));
+      const allTowns = uniqueValues(TUTORS.flatMap((t) => t.towns));
 
-    grid.innerHTML = '';
+      allSubjects.forEach((s) => {
+        const opt = document.createElement('option');
+        opt.value = s;
+        opt.textContent = s;
+        subjectSelect.appendChild(opt);
+      });
 
-    if (filtered.length === 0) {
-      const empty = document.createElement('div');
-      empty.className = 'no-results';
-      empty.textContent = 'No tutors match those filters. Try clearing a filter or searching a different subject/town.';
-      grid.appendChild(empty);
-    } else {
-      filtered.forEach((t) => grid.appendChild(tutorCard(t)));
+      allTowns.forEach((t) => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        townSelect.appendChild(opt);
+      });
     }
 
-    if (resultsCount) {
-      resultsCount.textContent = `Showing ${filtered.length} of ${TUTORS.length} tutor${TUTORS.length === 1 ? '' : 's'}`;
+    function render() {
+      const subject = subjectSelect.value;
+      const town = townSelect.value;
+      const search = searchInput.value.trim().toLowerCase();
+
+      const filtered = TUTORS.filter((t) => {
+        const matchSubject = subject === 'all' || t.subjects.includes(subject);
+        const matchTown = town === 'all' || t.towns.includes(town);
+        const matchSearch = !search || t.name.toLowerCase().includes(search);
+        return matchSubject && matchTown && matchSearch;
+      });
+
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'no-results';
+        empty.textContent = 'No tutors match those filters. Try clearing a filter or searching a different subject/town.';
+        grid.appendChild(empty);
+      } else {
+        filtered.forEach((t) => grid.appendChild(tutorCard(t)));
+      }
+
+      if (resultsCount) {
+        resultsCount.textContent = `Showing ${filtered.length} of ${TUTORS.length} tutor${TUTORS.length === 1 ? '' : 's'}`;
+      }
+    }
+
+    populateFilters();
+    render();
+
+    [subjectSelect, townSelect, searchInput].forEach((el) => {
+      el.addEventListener('input', render);
+      el.addEventListener('change', render);
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        subjectSelect.value = 'all';
+        townSelect.value = 'all';
+        searchInput.value = '';
+        render();
+      });
     }
   }
 
-  populateFilters();
-  render();
-
-  [subjectSelect, townSelect, searchInput].forEach((el) => {
-    el.addEventListener('input', render);
-    el.addEventListener('change', render);
-  });
-
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      subjectSelect.value = 'all';
-      townSelect.value = 'all';
-      searchInput.value = '';
-      render();
-    });
+  // --- Music tutors (separate section, no filtering) ---
+  if (musicGrid && typeof MUSIC_TUTORS !== 'undefined') {
+    renderStaticGrid(musicGrid, MUSIC_TUTORS);
   }
 });
