@@ -358,7 +358,7 @@ const TUTORS = [
   },
   {
     name: "Karim Kassim-Lakha",
-    photo: "",
+    photo: "assets/tutors/karim-kassim-lakha.jpg",
     subjects: ["Math", "Science", "World Languages"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan"],
     grades: "Grades K-12",
