@@ -151,7 +151,7 @@ const TUTORS = [
   },
   {
     name: "Lilly Geisler",
-    photo: "",
+    photo: "assets/tutors/lilly-geisler.jpg",
     subjects: ["Math", "Science", "English/Writing", "World Languages"],
     towns: ["Westport", "Weston"],
     grades: "Grades K-12",
