@@ -322,7 +322,7 @@ const TUTORS = [
   },
   {
     name: "Amina Ibrahim",
-    photo: "",
+    photo: "assets/tutors/amina-ibrahim.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
