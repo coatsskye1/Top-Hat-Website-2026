@@ -79,7 +79,7 @@ const TUTORS = [
   },
   {
     name: "Jess Selzer",
-    photo: "",
+    photo: "assets/tutors/jess-selzer.jpg",
     subjects: ["Math", "Science", "English/Writing", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
