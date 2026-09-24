@@ -61,7 +61,7 @@ const TUTORS = [
   },
   {
     name: "Teya Ozgen",
-    photo: "",
+    photo: "assets/tutors/teya-ozgen.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
@@ -79,7 +79,7 @@ const TUTORS = [
   },
   {
     name: "Jess Selzer",
-    photo: "",
+    photo: "assets/tutors/jessica-selzer.png",
     subjects: ["Math", "Science", "English/Writing", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
@@ -88,7 +88,7 @@ const TUTORS = [
   },
   {
     name: "Dylan Johnson",
-    photo: "",
+    photo: "assets/tutors/dylan-johnson.jpg",
     subjects: ["Math", "Science", "Social Studies"],
     towns: ["Westport"],
     grades: "Grades 9-12",
