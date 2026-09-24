@@ -364,5 +364,14 @@ const TUTORS = [
     grades: "Grades K-12",
     bio: "Hi, my name is Karim Kassim-Lakha, and I am a junior at Staples High School in Westport. In the past two-and-a-half years at Staples, I have taken Spanish 3 Honors, Global Themes, U.S. History Honors, Middle East Studies, Algebra one, Geometry, Biology, Chemistry, English nine and ten, Gothic and Horror Literature, Culinary, Tech ed (woodworking) one, two, and advanced, Materials and Design Science, and more. I am currently enrolled in Algebra two, AP Environmental Science, Film and Literature, Government Studies, Spanish 4 Honors, and more. My hobbies include woodworking, hiking, and Model UN.",
     online: true
+  },
+  {
+    name: "Alex Yang",
+    photo: "",
+    subjects: ["Math", "Science", "Social Studies"],
+    towns: ["Westport", "Weston", "Fairfield", "Norwalk"],
+    grades: "Grades K-12",
+    bio: "Hi! My name is Alex Yang and I am currently a junior at Hopkins School in New Haven. Most AP's have been removed from the curriculum and replaced with our own advanced courses, but I am in the most advanced/accelerated versions of all my classes. I am taking the equivalent of Calc BC and AP Physics 1, as well as history courses similar to AP World and Euro. While my interests are more STEM focused, I take equally rigorous courses in humanities and achieve the highest grades possible in most classes. Outside of school, I row at Maritime Rowing Club in Norwalk, where my crew medaled at the Youth National Championships this summer. I also love to play chess in my free time (I used to play in lots of tournaments before I started rowing as well), and I am learning C++ for the USACO contest. I look forward to working with you!",
+    online: true
   }
 ];
