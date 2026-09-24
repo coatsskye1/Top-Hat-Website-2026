@@ -115,7 +115,7 @@ const TUTORS = [
   },
   {
     name: "Jessica DiPrato",
-    photo: "",
+    photo: "assets/tutors/jessica-diprato.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
