@@ -75,5 +75,14 @@ const MUSIC_TUTORS = [
     grades: "Grades K-12",
     bio: "Hi! My name is Leelee Alix and I have been playing the cello since 4th grade. I was a part of my schools chamber orchestra for a few years, and also auditioned and made it into my schools top orchestra class. I have always been drawn to music, and I also love playing the piano for fun! I am excited to help other students when it comes to their own music journey.",
     online: true
+  },
+  {
+    name: "Nina Ghahremani",
+    photo: "assets/tutors/nina-ghahremani.jpg",
+    subjects: ["Violin"],
+    towns: ["Westport", "Weston", "Wilton", "Fairfield"],
+    grades: "Grades K-12",
+    bio: "Hi! My name is Nina Ghahremani and I have been playing the violin for 10 years. I play violin in the Symphonic Orchestra and Stradivarius Chamber Orchestra at Staples. I've also been a member of the Greater Connecticut Youth Orchestra for 3 years, and I'm a part of their Principal Orchestra. Violin is my passion, and I can't wait to share it with others!",
+    online: true
   }
 ];

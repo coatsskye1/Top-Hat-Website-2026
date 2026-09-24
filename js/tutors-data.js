@@ -382,5 +382,14 @@ const TUTORS = [
     grades: "Grades K-12",
     bio: "Hi! My name is LeeLee Alix and I am a junior at St. Joes! My favorite subjects are math and english, but I am happy to help in any subject! This year I am taking AP Pre-Calculus as well as a college level history class. Outside of school, I row at Connecticut Boat Club, and have been for the past 4 years. I'm super excited about the opportunity to help students learn!",
     online: true
+  },
+  {
+    name: "Nina Ghahremani",
+    photo: "assets/tutors/nina-ghahremani.jpg",
+    subjects: ["Math", "Science", "World Languages"],
+    towns: ["Westport", "Weston", "Wilton", "Fairfield"],
+    grades: "Grades K-12",
+    bio: "Hi! My name is Nina Ghahremani and I am a junior at Staples High School. My sophomore year, I took AP CSP and this year I'm taking AP Calc AB, AP CSA, and AP Gov. I have also been taking honors French for 3 years. Outside of school, I'm the captain of the Staples dance team, I play violin, and I'm a lifeguard for Westport Parks and Rec. I love tutoring in all subjects, but I'm especially passionate about math, science, and french. I look forward to working with you this year!",
+    online: true
   }
 ];
