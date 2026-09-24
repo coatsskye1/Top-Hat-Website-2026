@@ -52,7 +52,7 @@ const TUTORS = [
   },
   {
     name: "Mateo Riera",
-    photo: "",
+    photo: "assets/tutors/mateo-riera.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
