@@ -373,5 +373,14 @@ const TUTORS = [
     grades: "Grades K-12",
     bio: "Hi! My name is Alex Yang and I am currently a junior at Hopkins School in New Haven. Most AP's have been removed from the curriculum and replaced with our own advanced courses, but I am in the most advanced/accelerated versions of all my classes. I am taking the equivalent of Calc BC and AP Physics 1, as well as history courses similar to AP World and Euro. While my interests are more STEM focused, I take equally rigorous courses in humanities and achieve the highest grades possible in most classes. Outside of school, I row at Maritime Rowing Club in Norwalk, where my crew medaled at the Youth National Championships this summer. I also love to play chess in my free time (I used to play in lots of tournaments before I started rowing as well), and I am learning C++ for the USACO contest. I look forward to working with you!",
     online: true
+  },
+  {
+    name: "Leelee Alix",
+    photo: "assets/tutors/leelee-alix.jpg",
+    subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
+    towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan", "Darien"],
+    grades: "Grades K-12",
+    bio: "Hi! My name is LeeLee Alix and I am a junior at St. Joes! My favorite subjects are math and english, but I am happy to help in any subject! This year I am taking AP Pre-Calculus as well as a college level history class. Outside of school, I row at Connecticut Boat Club, and have been for the past 4 years. I'm super excited about the opportunity to help students learn!",
+    online: true
   }
 ];

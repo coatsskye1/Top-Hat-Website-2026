@@ -66,5 +66,14 @@ const MUSIC_TUTORS = [
     grades: "Grades K-12",
     bio: "Hi! My name is Amina Ibrahim, and I have been playing the cello as well as singing for 8 years. I am a junior at Staples High School. I am a member of both Symphonic Orchestra, and the Fairfield County Children's Chamber Choir. Music is such an important aspect of my life and I can't wait to share it with others!",
     online: true
+  },
+  {
+    name: "Leelee Alix",
+    photo: "assets/tutors/leelee-alix.jpg",
+    subjects: ["Cello", "Piano"],
+    towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan", "Darien"],
+    grades: "Grades K-12",
+    bio: "Hi! My name is Leelee Alix and I have been playing the cello since 4th grade. I was a part of my schools chamber orchestra for a few years, and also auditioned and made it into my schools top orchestra class. I have always been drawn to music, and I also love playing the piano for fun! I am excited to help other students when it comes to their own music journey.",
+    online: true
   }
 ];
