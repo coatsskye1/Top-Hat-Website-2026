@@ -241,7 +241,7 @@ const TUTORS = [
   },
   {
     name: "Riley Caney",
-    photo: "",
+    photo: "assets/tutors/riley-caney.jpg",
     subjects: ["Math", "Science", "Social Studies", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
