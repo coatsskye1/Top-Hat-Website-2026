@@ -346,5 +346,14 @@ const TUTORS = [
     grades: "Grades K-12",
     bio: "Hi! My name is Alexi Dalamagas, and I am currently a junior at Staples High School. Over the past three years, I have taken nine honors classes and AP U.S. History. This year, I am taking AP Biology, AP Language and Composition, AP Computer Science Principles, and AP Calculus AB. I am most passionate about science, math, and Mandarin, but I would love to help out in any subject where I am needed! Outside of school, I am the founder of my own literacy club, Letters to Littles, an editor for STEM Journal, the founder of a STEM program at the Westport Library, and a member of both the Math and Science National Honor Societies. I'm excited to work with everyone this year!",
     online: true
+  },
+  {
+    name: "Peter Nelson",
+    photo: "",
+    subjects: ["Math", "Science", "English/Writing"],
+    towns: ["Westport", "Weston", "Fairfield"],
+    grades: "Grades K-12",
+    bio: "Hi, my name is Peter Nelson and I'm currently a senior at Staples High School. During sophomore year, I took AP computer science, chemistry honors, and pre-calculus honors. This year, I am enrolled in AP Macro/Micro Economics, AP Calculus AB, and AP Chemistry. I am mostly interested in math and science topics, but I have made sure to take rigorous humanities courses as well, like Seminar in Academic Writing, and U.S. History Honors. Outside of school, I do volunteer work, play soccer for the school and for a club, and am in clubs like HTI, Model UN, and DECA. I look forward to sharing what I know and teaching others difficult concepts.",
+    online: true
   }
 ];
