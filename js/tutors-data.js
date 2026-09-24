@@ -44,9 +44,9 @@ const TUTORS = [
   {
     name: "Charles McGillion-Moore",
     photo: "",
-    subjects: ["Math", "Social Studies"],
-    towns: ["Westport"],
-    grades: "Grades 9-12",
+    subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
+    towns: ["Westport", "Wilton", "Weston", "Fairfield", "Norwalk"],
+    grades: "Grades K-12",
     bio: "Hi, I'm Charles McGillion-Moore, and I'm currently a senior at Staples High School. By the end of this year, I will have completed five AP courses and eight honors-level classes. I'm most passionate about math-related courses, and this year I am taking AP Calculus AB, AP Statistics, AP Microeconomics, and AP Macroeconomics. While my favorite subjects tend to be more quantitative, I've also chosen equally rigorous courses in other disciplines, developing a genuine interest in both STEM and the humanities. Outside of school, I row at Maritime Rowing Club in Norwalk, where my crew qualified for and competed at the Youth National Championships this past summer. Locally, I serve as a voting member of the Westport Youth Commission, a Senior Scout in Troop 39, and a frequent volunteer at the Person-to-Person pantry.",
     online: false
   },
