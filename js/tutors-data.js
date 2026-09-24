@@ -313,7 +313,7 @@ const TUTORS = [
   },
   {
     name: "Josie Caricato",
-    photo: "",
+    photo: "assets/tutors/josie-caricato.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston"],
     grades: "Grades K-12",
