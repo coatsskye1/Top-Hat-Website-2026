@@ -331,7 +331,7 @@ const TUTORS = [
   },
   {
     name: "Abigail Copperthite",
-    photo: "",
+    photo: "assets/tutors/abigail-copperthite.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies"],
     towns: ["Fairfield"],
     grades: "Grades K-12",
