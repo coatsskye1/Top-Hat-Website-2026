@@ -34,7 +34,7 @@
 const TUTORS = [
   {
     name: "Stella DiGeronimo",
-    photo: "",
+    photo: "assets/tutors/stella-digeronimo.jpg",
     subjects: ["Math", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan"],
     grades: "Grades K-12",
