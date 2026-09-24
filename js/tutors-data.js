@@ -178,7 +178,7 @@ const TUTORS = [
   },
   {
     name: "Luke Filipek",
-    photo: "",
+    photo: "assets/tutors/luke-filipek.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies"],
     towns: ["Westport", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
