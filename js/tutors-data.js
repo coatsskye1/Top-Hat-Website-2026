@@ -340,7 +340,7 @@ const TUTORS = [
   },
   {
     name: "Alexi Dalamagas",
-    photo: "",
+    photo: "assets/tutors/alexi-dalamagas.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
