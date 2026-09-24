@@ -304,7 +304,7 @@ const TUTORS = [
   },
   {
     name: "Anita Vinokur",
-    photo: "",
+    photo: "assets/tutors/anita-vinokur.jpg",
     subjects: ["Math", "Science", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
