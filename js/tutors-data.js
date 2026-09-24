@@ -355,5 +355,14 @@ const TUTORS = [
     grades: "Grades K-12",
     bio: "Hi, my name is Peter Nelson and I'm currently a senior at Staples High School. During sophomore year, I took AP computer science, chemistry honors, and pre-calculus honors. This year, I am enrolled in AP Macro/Micro Economics, AP Calculus AB, and AP Chemistry. I am mostly interested in math and science topics, but I have made sure to take rigorous humanities courses as well, like Seminar in Academic Writing, and U.S. History Honors. Outside of school, I do volunteer work, play soccer for the school and for a club, and am in clubs like HTI, Model UN, and DECA. I look forward to sharing what I know and teaching others difficult concepts.",
     online: true
+  },
+  {
+    name: "Karim Kassim-Lakha",
+    photo: "",
+    subjects: ["Math", "Science", "World Languages"],
+    towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan"],
+    grades: "Grades K-12",
+    bio: "Hi, my name is Karim Kassim-Lakha, and I am a junior at Staples High School in Westport. In the past two-and-a-half years at Staples, I have taken Spanish 3 Honors, Global Themes, U.S. History Honors, Middle East Studies, Algebra one, Geometry, Biology, Chemistry, English nine and ten, Gothic and Horror Literature, Culinary, Tech ed (woodworking) one, two, and advanced, Materials and Design Science, and more. I am currently enrolled in Algebra two, AP Environmental Science, Film and Literature, Government Studies, Spanish 4 Honors, and more. My hobbies include woodworking, hiking, and Model UN.",
+    online: true
   }
 ];
