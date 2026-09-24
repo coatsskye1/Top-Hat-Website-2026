@@ -295,7 +295,7 @@ const TUTORS = [
   },
   {
     name: "Nora Finneran",
-    photo: "",
+    photo: "assets/tutors/nora-finneran.jpg",
     subjects: ["Math", "Science", "English/Writing"],
     towns: ["Westport", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-10",
