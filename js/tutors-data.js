@@ -268,7 +268,7 @@ const TUTORS = [
   },
   {
     name: "Leya Chaves",
-    photo: "",
+    photo: "assets/tutors/leya-chaves.jpg",
     subjects: ["English/Writing", "Social Studies", "Test Prep"],
     towns: ["Westport"],
     grades: "Grades 9-12",
