@@ -232,7 +232,7 @@ const TUTORS = [
   },
   {
     name: "Jonathan Frawley",
-    photo: "",
+    photo: "assets/tutors/jonathan-frawley.jpg",
     subjects: ["Math", "Science", "Test Prep"],
     towns: ["Westport", "Wilton", "Norwalk", "New Canaan", "Darien"],
     grades: "Grades K-12",
