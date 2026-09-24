@@ -124,7 +124,7 @@ const TUTORS = [
   },
   {
     name: "Addison Dennett",
-    photo: "",
+    photo: "assets/tutors/addison-dennett.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
