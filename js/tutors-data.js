@@ -367,7 +367,7 @@ const TUTORS = [
   },
   {
     name: "Alex Yang",
-    photo: "",
+    photo: "assets/tutors/alex-yang.jpg",
     subjects: ["Math", "Science", "Social Studies"],
     towns: ["Westport", "Weston", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
