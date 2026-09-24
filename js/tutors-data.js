@@ -286,7 +286,7 @@ const TUTORS = [
   },
   {
     name: "Elena Nasar",
-    photo: "",
+    photo: "assets/tutors/elena-nasar.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
