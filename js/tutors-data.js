@@ -70,7 +70,7 @@ const TUTORS = [
   },
   {
     name: "Maddie Sine",
-    photo: "",
+    photo: "assets/tutors/maddie-sine.png",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Fairfield", "New Canaan"],
     grades: "Grades K-12",
@@ -79,7 +79,7 @@ const TUTORS = [
   },
   {
     name: "Jess Selzer",
-    photo: "assets/tutors/jessica-selzer.png",
+    photo: "",
     subjects: ["Math", "Science", "English/Writing", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
