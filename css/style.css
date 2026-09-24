@@ -1,4 +1,4 @@
-/* ===== Top Hat Tutors — Stylesheet ===== */
+/* ===== Top Hat Tutors Stylesheet ===== */
 
 :root {
   --cream: #fbf3da;
@@ -580,23 +580,6 @@ section { padding: 72px 0; }
   font-weight: 600;
 }
 .rate-table tr:last-child td { border-bottom: none; }
-.essay-rates {
-  margin-top: 24px;
-  background: var(--paper);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  padding: 20px 24px;
-}
-.essay-rates h3 {
-  font-family: var(--font-heading);
-  margin-bottom: 12px;
-}
-.essay-rates ul { list-style: none; padding: 0; margin: 0; }
-.essay-rates li {
-  padding: 8px 0;
-  border-bottom: 1px solid var(--gray-200);
-}
-.essay-rates li:last-child { border-bottom: none; }
 
 /* ---------- Page hero (inner pages) ---------- */
 .page-hero {

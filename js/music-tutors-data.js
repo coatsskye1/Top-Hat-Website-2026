@@ -3,7 +3,7 @@
 // ============================================================
 // Same idea as js/tutors-data.js, but for the separate "Music
 // Tutors" section on tutors.html. This list is NOT filtered by
-// the subject/town/search controls above it — it's always shown
+// the subject/town/search controls above it, it's always shown
 // in full, so there's nothing else to wire up.
 //
 // To add a music tutor: copy one of the objects below and paste

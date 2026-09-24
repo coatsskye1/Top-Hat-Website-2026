@@ -3,7 +3,7 @@
 // ============================================================
 // This is the ONLY file you need to edit to add, remove, or
 // update a tutor. The tutors page (tutors.html) reads this
-// list and builds the filterable directory automatically —
+// list and builds the filterable directory automatically,
 // no HTML editing required.
 //
 // To add a tutor: copy one of the objects below (from the
