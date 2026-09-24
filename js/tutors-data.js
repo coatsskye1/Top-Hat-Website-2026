@@ -43,7 +43,7 @@ const TUTORS = [
   },
   {
     name: "Charles McGillion-Moore",
-    photo: "",
+    photo: "assets/tutors/charles-mcgillion-moore.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Wilton", "Weston", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
