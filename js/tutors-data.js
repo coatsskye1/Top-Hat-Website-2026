@@ -250,7 +250,7 @@ const TUTORS = [
   },
   {
     name: "Emilie Russell",
-    photo: "",
+    photo: "assets/tutors/emilie-russell.jpg",
     subjects: ["Math", "Science", "Social Studies"],
     towns: ["Westport"],
     grades: "Grades K-12",
