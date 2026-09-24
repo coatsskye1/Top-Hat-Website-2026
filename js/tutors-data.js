@@ -187,7 +187,7 @@ const TUTORS = [
   },
   {
     name: "Gretchen Zabicki",
-    photo: "",
+    photo: "assets/tutors/gretchen-zabicki.jpg",
     subjects: ["Math", "Science", "English/Writing", "World Languages"],
     towns: ["Westport", "Weston", "Wilton", "Norwalk", "New Canaan"],
     grades: "Grades K-12",
@@ -196,7 +196,7 @@ const TUTORS = [
   },
   {
     name: "Cassi Kessler",
-    photo: "",
+    photo: "assets/tutors/cassi-kessler.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Weston", "Wilton"],
     grades: "Grades K-12",
@@ -205,7 +205,7 @@ const TUTORS = [
   },
   {
     name: "Teddy Kushel",
-    photo: "",
+    photo: "assets/tutors/teddy-kushel.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan", "Darien"],
     grades: "Grades K-12",
@@ -214,7 +214,7 @@ const TUTORS = [
   },
   {
     name: "Katie Romaniv",
-    photo: "",
+    photo: "assets/tutors/katie-romaniv.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Fairfield", "New Canaan"],
     grades: "Grades K-12",
@@ -223,7 +223,7 @@ const TUTORS = [
   },
   {
     name: "Rachel Altieri",
-    photo: "",
+    photo: "assets/tutors/rachel-altieri.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Fairfield", "New Canaan"],
     grades: "Grades K-12",
