@@ -133,7 +133,7 @@ const TUTORS = [
   },
   {
     name: "Piper Salik",
-    photo: "",
+    photo: "assets/tutors/piper-salik.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Westport", "Fairfield"],
     grades: "Grades K-12",
