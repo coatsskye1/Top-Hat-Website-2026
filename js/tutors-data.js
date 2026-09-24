@@ -160,7 +160,7 @@ const TUTORS = [
   },
   {
     name: "Kathryn Donovan",
-    photo: "",
+    photo: "assets/tutors/kathryn-donovan.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
     towns: ["Fairfield"],
     grades: "Grades K-12",
