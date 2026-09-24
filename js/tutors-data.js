@@ -97,7 +97,7 @@ const TUTORS = [
   },
   {
     name: "Avery Kalter",
-    photo: "",
+    photo: "assets/tutors/avery-kalter.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
     grades: "Grades K-12",
