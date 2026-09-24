@@ -106,7 +106,7 @@ const TUTORS = [
   },
   {
     name: "Jonah Bomback",
-    photo: "",
+    photo: "assets/tutors/jonah-bomback.jpg",
     subjects: ["Math", "Science", "English/Writing", "World Languages", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield"],
     grades: "Grades K-12",
