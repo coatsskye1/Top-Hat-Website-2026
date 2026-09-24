@@ -277,7 +277,7 @@ const TUTORS = [
   },
   {
     name: "Alex Fetner",
-    photo: "",
+    photo: "assets/tutors/alex-fetner.jpg",
     subjects: ["Math", "Science", "English/Writing", "World Languages"],
     towns: ["Westport", "Weston", "Fairfield"],
     grades: "Grades K-12",
