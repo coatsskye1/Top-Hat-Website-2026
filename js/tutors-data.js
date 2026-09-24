@@ -259,7 +259,7 @@ const TUTORS = [
   },
   {
     name: "Cassie Siegner",
-    photo: "",
+    photo: "assets/tutors/cassie-siegner.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "Test Prep"],
     towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk", "New Canaan", "Darien"],
     grades: "Grades K-12",
