@@ -93,7 +93,7 @@ const TUTORS = [
     towns: ["Westport"],
     grades: "Grades 9-12",
     bio: "Hi! My name is Dylan Johnson, and I'm a senior at Staples High School. This year, I'm taking courses including AP Physics, AP Calculus, AP Psychology, AP Government and Politics, and AP Language and Composition. Outside of school, I play varsity and club volleyball and am a voting member of the Westport Youth Commission. My favorite subjects are math and science, and I especially enjoy working through challenging problems. I'm looking forward to helping students build their skills and confidence in these subjects this year!",
-    online: false
+    online: true
   },
   {
     name: "Avery Kalter",
@@ -288,7 +288,7 @@ const TUTORS = [
     name: "Elena Nasar",
     photo: "assets/tutors/elena-nasar.jpg",
     subjects: ["Math", "Science", "English/Writing", "Social Studies", "World Languages"],
-    towns: ["Westport", "Weston", "Wilton", "Fairfield", "Norwalk"],
+    towns: ["Westport", "Norwalk"],
     grades: "Grades K-12",
     bio: "Hi! My name is Elena Nasar and I am a senior at Staples High School. Throughout my time at Staples, I have taken 11 honors courses, AP Government, AP Biology, and AP Language. This year, I am taking AP Calculus AB, AP Psychology, AP Chemistry and AP Spanish Language. I am most passionate about the sciences, but I am happy to help with any subject! Outside of school, I am a varsity coxswain at Saugatuck Rowing Club, volunteer at Yale New Haven Hospital, and am a No Place for Hate Leader for our school's chapter. I look forward to working with you this year!",
     online: true
